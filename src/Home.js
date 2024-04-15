@@ -33,7 +33,7 @@ function Home({ navigation }) {
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('QuizHome')}>
-          <Text style={styles.buttonText}>सामान्य ज्ञान</Text>
+          <Text style={styles.buttonText}>लोक सेवा परीक्षाका लागि प्रश्नहरू</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
