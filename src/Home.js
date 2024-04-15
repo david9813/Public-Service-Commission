@@ -51,7 +51,7 @@ function Home({ navigation }) {
         <TouchableOpacity
           style={styles.button}
           onPress={() => Linking.openURL('https://gorkhapatraonline.com/categories/loksewa')}>
-          <Text style={styles.buttonText}>गोरखापत्र</Text>
+          <Text style={styles.buttonText}>गोरखापत्रमा प्रकाशित प्रश्नहरू</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
