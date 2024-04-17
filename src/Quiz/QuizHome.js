@@ -12,12 +12,6 @@ const QuizHome = ({ navigation }) => {
           onPress={() => navigation.navigate('History')}>
           <Text style={styles.buttonText}> नेपालको इतिहास र सांस्कृति </Text>
         </TouchableOpacity>
-        
-        <TouchableOpacity
-          style={styles.button} 
-          onPress={() => navigation.navigate('वर्तमान घटनाहरू')}>
-          <Text style={styles.buttonText}> वर्तमान घटनाहरू  </Text>
-        </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.button} 
@@ -54,6 +48,12 @@ const QuizHome = ({ navigation }) => {
           style={styles.button} 
           onPress={() => navigation.navigate('सामाजिक समस्याहरू')}>
           <Text style={styles.buttonText}> सामाजिक समस्याहरू</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.button} 
+          onPress={() => navigation.navigate('वर्तमान घटनाहरू')}>
+          <Text style={styles.buttonText}> वर्तमान घटनाहरू  </Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button} 

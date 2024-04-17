@@ -32,7 +32,7 @@ function Home({ navigation }) {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate('QuizHome')}>
+          onPress={() => navigation.navigate('लोक सेवा परीक्षाका लागि प्रश्नहरू')}>
           <Text style={styles.buttonText}>लोक सेवा परीक्षाका लागि प्रश्नहरू</Text>
         </TouchableOpacity>
 
@@ -42,11 +42,7 @@ function Home({ navigation }) {
           <Text style={styles.buttonText}>नेपालको संविधान</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate('Qustions')}>
-          <Text style={styles.buttonText}>लोक सेवा परीक्षाका लागि प्रश्नहरू</Text>
-        </TouchableOpacity>
+      
 
         <TouchableOpacity
           style={styles.button}
@@ -101,7 +97,7 @@ function HomeStack() {
             
         })}
       />
-      <Stack.Screen name="QuizHome" component={QuizHome} />
+      <Stack.Screen name="लोक सेवा परीक्षाका लागि प्रश्नहरू" component={QuizHome} />
   
       <Stack.Screen name="History" component={History} />
       <Stack.Screen name="नमुना प्रश्न" component={ Qustion} />

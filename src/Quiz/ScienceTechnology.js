@@ -1,14 +1,50 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 const ScienceTechnology = () => {
   return (
-    <View>
-      <Text>ScienceTechnology</Text>
+    <ScrollView> 
+    <View style={styles.container}>
+
+     <Text style={styles.question}> 
+        - नेपालमा विज्ञान र प्रविधि संस्थाहरूले कुन कुन क्षेत्रमा प्रमुख सफलताहरू प्राप्त गरेका छन्?{'\n'}
+        - विज्ञान र प्रविधि अनुसन्धानका लागि नेपालमा कुन कुन अनुसन्धान केन्द्रहरू छन्?{'\n'}
+        - नेपालमा कुन कुन शैक्षिक संस्थाहरूले विज्ञान र प्रविधि शिक्षा दिन्छन्?{'\n'}
+        - विज्ञान र प्रविधि नेपालमा सामाजिक, आर्थिक, र पर्यावरणीय परिवर्तनमा कसरी महत्त्वपूर्ण भूमिका खेलेको छ?{'\n'}
+      </Text>
+    <Text style={styles.paragraph}>
+
+  - नेपालमा विज्ञान र प्रविधि अनुसन्धानका लागि राष्ट्रिय विज्ञान तथा प्रविधि परिषद, विज्ञान तथा प्रविधि विभाग, अनुसन्धान केन्द्र, आदि छन्। {'\n'}{'\n'}
+  - नेपालमा विज्ञान र प्रविधि शिक्षाको लागि ट्रिभुवन विश्वविद्यालय, काठमाडौं विश्वविद्यालय, पोखरा विज्ञान तथा प्रविधि विश्वविद्यालय, राष्ट्रिय प्रविधि विद्यापीठ, आदि छन्। {'\n'}{'\n'}
+  - नेपालमा विज्ञान र प्रविधि शिक्षाको लागि विशेष योगदान सञ्चालन गर्ने लगायत शैक्षिक संस्थाहरूका सहयोगले गरिन्छ। {'\n'}{'\n'}
+  - विज्ञान र प्रविधि नेपालमा समाजिक, आर्थिक, र पर्यावरणीय परिवर्तनमा नैतिकता,  र नवानुनाकरण गर्ने भूमिका खेल्छ{'\n'}{'\n'}
+</Text>
+
+    
     </View>
+ 
+    </ScrollView>
   )
 }
 
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+
+
+  paragraph: {
+    fontSize: 20,
+ 
+  },
+})
+
+
 export default ScienceTechnology
 
-const styles = StyleSheet.create({})
