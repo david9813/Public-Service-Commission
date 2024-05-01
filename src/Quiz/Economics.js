@@ -168,7 +168,7 @@ const Economics= ({ navigation }) => {
   };
 
   const Home = () => {
-    navigation.navigate('QuizHome');
+    navigation.navigate('लोक सेवा तयारी');
   };
 
   const playAgain = () => {

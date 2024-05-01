@@ -13,6 +13,29 @@ const Custommenu = ({ navigation }) => {
   };
   // for share app
   const shareApp = async () => {
+    const appMessage = "Check out this amazing app! It's a great resource for exploring topics like Jesus, miracles, prayer, and more. Download it now!";
+
+    try {
+      const result = await Share.share({
+        message: appMessage,
+      });
+
+      if (result.action === Share.sharedAction) {
+        if (result.activityType) {
+
+          console.log('App shared successfully.');
+        } else {
+
+          console.log('Share was dismissed.');
+        }
+      } else if (result.action === Share.dismissedAction) {
+
+        console.log('Share was dismissed.');
+      }
+    } catch (error) {
+      console.error('Error sharing app:', error.message);
+    }
+  
 
   };
 
@@ -69,7 +92,7 @@ const styles = StyleSheet.create({
   menuItem: {
     flex: 0.4,
     justifyContent: 'center',
-    backgroundColor: '#B23850', // Sea green
+    backgroundColor: '#B23850', 
   },
   text: {
     fontSize: 20,
@@ -80,17 +103,17 @@ const styles = StyleSheet.create({
   },
   seconditems: {
     justifyContent: 'center',
-    backgroundColor: '#3B8BEB', // Pastel yellow
+    backgroundColor: '#3B8BEB', 
     flex: 0.7,
     width: '100%',
     paddingVertical: 15,
     borderBottomWidth: 1,
-    borderBottomColor: '#b2bec3', // Light gray
+    borderBottomColor: '#b2bec3', 
     fontSize: 20,
     fontWeight: 'bold',
   },
   third: {
-    backgroundColor: '#C4DBF6', // Pastel yellow
+    backgroundColor: '#C4DBF6', 
     flex: 0.4,
     color: '#ffffff',
   }

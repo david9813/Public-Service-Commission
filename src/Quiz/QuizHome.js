@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, ScrollView } from 'react-native';
 
 const QuizHome = ({ navigation }) => {
+
   return (
     <ScrollView style={styles.scrollView}> 
       <View style={styles.container}>
