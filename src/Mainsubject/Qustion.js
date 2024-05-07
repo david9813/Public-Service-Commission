@@ -48,8 +48,7 @@ const styles = StyleSheet.create({
     
   },
   touchableText: {
-    color: 'rgba(255, 255, 255, 0.7)', // Adjust the opacity value (0.7 for example)
-    fontSize: 18,
+    color: 'rgba(255, 255, 255, 0.7)', 
     fontWeight: 'bold',
     width: 100
   },
