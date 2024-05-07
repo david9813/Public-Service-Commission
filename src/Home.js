@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
     },
   },
   separator: {
-    height: 40,
+    height: 30,
   },
   button: {
     backgroundColor: "#3498db", // Blue

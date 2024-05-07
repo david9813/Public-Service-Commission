@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "A",
-    "slug": "A",
-    "version": "1.0.0",
+    "name": "Journey of Faith",
+    "slug": "AW",
+    "version": "2.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Add a heading (1).png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Add a heading (1).png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,13 +18,25 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.davidsapkota.JourneyofFaith"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "60f6d617-a3aa-4f86-a604-b9d41af9b964"
+      }
+    }
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "60f6d617-a3aa-4f86-a604-b9d41af9b964"
     }
   }
 }
