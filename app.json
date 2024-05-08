@@ -1,13 +1,12 @@
 {
   "expo": {
-    "name": "Journey of Faith",
+    "name": "lok seva aayog",
     "slug": "AW",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Add a heading (1).png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/icon1.png", 
     "splash": {
-      "image": "./assets/Add a heading (1).png",
+      "image": "./assets/2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,9 +17,9 @@
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/2.png", 
         "backgroundColor": "#ffffff"
       },
       "package": "com.davidsapkota.JourneyofFaith"
@@ -32,11 +31,11 @@
     }
   },
   "web": {
-    "favicon": "./assets/favicon.png"
-  },
+    "favicon": "./assets/favicon.png" ,
   "extra": {
     "eas": {
       "projectId": "60f6d617-a3aa-4f86-a604-b9d41af9b964"
     }
   }
+}
 }

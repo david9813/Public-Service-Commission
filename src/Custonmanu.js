@@ -10,7 +10,7 @@ const Custommenu = ({ navigation }) => {
   };
 
   const shareApp = async () => {
-    const appMessage = "Check out this amazing app! It's a great resource for exploring topics like Jesus, miracles, prayer, and more. Download it now!";
+    const appMessage = "Check out this amazing app Download it now! https://play.google.com/store/apps/details?id=com.davidsapkota.JourneyofFaith";
 
     try {
       const result = await Share.share({
