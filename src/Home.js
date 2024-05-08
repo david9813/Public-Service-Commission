@@ -188,7 +188,7 @@ function HomeStack() {
           headerTitleStyle: {
             textAlign: "center",
             color: "#fff",
-            fontSize: 30,
+            fontSize: 20,
           },
         })}
       />
@@ -210,47 +210,298 @@ function HomeStack() {
           headerTitleStyle: {
             textAlign: "center",
             color: "#fff",
-            fontSize: 30,
+            fontSize: 20,
           },
         })}
       />
-      <Stack.Screen name="Qustions" component={Geography} />
-      <Stack.Screen name="वर्तमान घटनाहरू" component={CurrentEvents} />
-      <Stack.Screen name="भूगोल र पर्यावरण" component={GeographyEnvironment} />
-      <Stack.Screen name="राजनीति र शासन" component={PoliticsGovernance} />
-      <Stack.Screen name="अर्थतन्त्र" component={Economics} />
+      <Stack.Screen
+        name="Qustions"
+        component={Geography}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
+      />
+      <Stack.Screen
+        name="वर्तमान घटनाहरू"
+        component={CurrentEvents}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
+      />
+      <Stack.Screen
+        name="भूगोल र पर्यावरण"
+        component={GeographyEnvironment}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
+      />
+      <Stack.Screen
+        name="राजनीति र शासन"
+        component={PoliticsGovernance}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
+      />
+      <Stack.Screen
+        name="अर्थतन्त्र"
+        component={Economics}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
+      />
       <Stack.Screen
         name="नेपालको सामान्य ज्ञान"
         component={GeneralKnowledgeNepal}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
       />
       <Stack.Screen
         name="नेपाली साहित्य र भाषा"
         component={LiteratureLanguage}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
       />
       <Stack.Screen
         name="विज्ञान र प्रविधि नेपालमा"
         component={ScienceTechnology}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
       />
-      <Stack.Screen name="सामाजिक समस्याहरू" component={SocialIssues} />
+      <Stack.Screen
+        name="सामाजिक समस्याहरू"
+        component={SocialIssues}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
+      />
       <Stack.Screen
         name="नेपालसँग सम्बन्धित अन्तर्राष्ट्रिय सम्बन्धहरू"
         component={InternationalRelations}
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("लोक सेवा परीक्षाका लागि प्रश्नहरू")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
       />
 
       <Stack.Screen name="Qustion" component={Qustion} />
       <Stack.Screen
         name="खुला प्रतियोगितात्मक लिखित परीक्षा"
         component={Forpolice}
-        options={{
-          title: "खुला प्रतियोगितात्मक लिखित परीक्षा",
-          headerTitleAlign: "center",
-          headerTitleStyle: {
-            textAlign: "left",
+        options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("नमुना प्रश्न")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
           },
-        }}
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
       />
 
-      <Stack.Screen name="शिक्षक सेवा आयोग" component={forTecher} />
+      <Stack.Screen name="शिक्षक सेवा आयोग" component={forTecher} options={({ navigation }) => ({
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                navigation.navigate("नमुना प्रश्न")
+              }
+              style={{ marginLeft: 30 }}
+            >
+              <AntDesign name="arrowleft" size={30} color="#fff" />
+            </TouchableOpacity>
+          ),
+          headerStyle: {
+            backgroundColor: "#B23850",
+          },
+          headerTitleStyle: {
+            textAlign: "center",
+            color: "#fff",
+            fontSize: 18,
+          },
+        })}
+      />
     </Stack.Navigator>
   );
 }

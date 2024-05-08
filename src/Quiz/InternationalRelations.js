@@ -12,7 +12,7 @@ const InternationalRelations = () => {
             - नेपालको अंतर्राष्ट्रिय संगठनमा भूमिका {"\n"}
             - मा आधारित अध्ययन गर्नुहोस् {"\n"}
             
-         We are working to create questions and answers for this topic
+        
 
         </Text>
     </View>

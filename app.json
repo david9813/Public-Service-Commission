@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "lok seva aayog",
+    "name": "lok Seva Aayog",
     "slug": "AW",
-    "version": "3.0.0",
+    "version": "3.1.1",
     "orientation": "portrait",
     "icon": "./assets/icon1.png", 
     "splash": {
-      "image": "./assets/2.png",
+      "image": "./assets/icon1.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,9 +17,9 @@
       "supportsTablet": true
     },
     "android": {
-      "versionCode": 3,
+      "versionCode": 4,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/2.png", 
+        "foregroundImage": "./assets/icon1.png", 
         "backgroundColor": "#ffffff"
       },
       "package": "com.davidsapkota.JourneyofFaith"
