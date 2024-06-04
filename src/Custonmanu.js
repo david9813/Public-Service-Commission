@@ -59,11 +59,15 @@ const Custommenu = ({ navigation }) => {
             NoteBook <FontAwesome name="book" size={20} color="#fff" />
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("Notice")}>
+        <TouchableOpacity onPress={() => navigation.navigate("News")}>
           <Text style={styles.text}>
             {" "}
-            नोटिस (Notice){" "}
-            <MaterialIcons name="notifications" size={20} color="#fff" />
+            News{" "}
+            <MaterialCommunityIcons
+              name="book-open-outline"
+              size={20}
+              color="#fff"
+            />
           </Text>
         </TouchableOpacity>
         <TouchableOpacity

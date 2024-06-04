@@ -30,6 +30,11 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import forTecher from "./Mainsubject/ExampleQustion/forTecher";
 
+
+
+
+
+
 const Stack = createStackNavigator();
 
 function Home({ navigation }) {
@@ -101,6 +106,15 @@ function Home({ navigation }) {
 function HomeStack() {
   return (
     <Stack.Navigator>
+
+
+
+
+
+
+
+
+
       <Stack.Screen
         name="लोक सेवा तयारी"
         component={Home}

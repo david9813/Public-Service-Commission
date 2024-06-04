@@ -36,7 +36,7 @@ function MyDrawer() {
           },
         })}
       />
-      <Drawer.Screen name="Notice" component={Notice} options={({ navigation }) => ({
+      <Drawer.Screen name="News" component={Notice} options={({ navigation }) => ({
           headerLeft: () => (
             <TouchableOpacity
             onPress={() => navigation.openDrawer()
