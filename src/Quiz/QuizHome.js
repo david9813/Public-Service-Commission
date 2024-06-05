@@ -8,11 +8,7 @@ const QuizHome = ({ navigation }) => {
       <View style={styles.container}>
         <View style={styles.separator} />
 
-        <TouchableOpacity
-          style={styles.button} 
-          onPress={() => navigation.navigate('History')}>
-          <Text style={styles.buttonText}> नेपालको इतिहास र सांस्कृति </Text>
-        </TouchableOpacity>
+        
 
         <TouchableOpacity
           style={styles.button} 
@@ -34,6 +30,12 @@ const QuizHome = ({ navigation }) => {
           style={styles.button} 
           onPress={() => navigation.navigate('नेपालको सामान्य ज्ञान')}>
           <Text style={styles.buttonText}> नेपालको सामान्य ज्ञान</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.button} 
+          onPress={() => navigation.navigate('History')}>
+          <Text style={styles.buttonText}> नेपालको इतिहास र सांस्कृति </Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button} 

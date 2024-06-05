@@ -3,8 +3,6 @@ import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity, Linking, A
 
 const Notice = () => {
   const [nepalNews, setNepalNews] = useState([]);
-  const [loksewaNews, setLoksewaNews] = useState([]);
-  
   const [worldNews, setWorldNews] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -12,8 +10,6 @@ const Notice = () => {
     const fetchData = async () => {
       setLoading(true);
       await fetchNews('nepal', setNepalNews);
-      await fetchNews('loksewa', setLoksewaNews);
-     
       await fetchNews('world', setWorldNews);
       setLoading(false);
     };
@@ -28,7 +24,7 @@ const Notice = () => {
   const fetchNews = async (query, setNews) => {
     try {
       console.log(`Fetching news for query: ${query}`);
-      const response = await fetch(`https://gnews.io/api/v4/search?q=${query}&token=efd3327e26dab807e4babdce40990306`);
+      const response = await fetch(`https://gnews.io/api/v4/search?q=${query}&country=us&token=efd3327e26dab807e4babdce40990306`);
       const data = await response.json();
       console.log(`Data fetched for ${query}: `, data);
       setNews(data.articles || []); // Ensure articles is an array
@@ -68,8 +64,6 @@ const Notice = () => {
       ) : (
         <ScrollView contentContainerStyle={styles.scrollView}>
           {renderArticles("Today's News Related to Nepal", nepalNews)}
-          {renderArticles('Top Headlines on Loksewa', loksewaNews)}
-          
           {renderArticles('Most Reading News Today from the World', worldNews)}
         </ScrollView>
       )}

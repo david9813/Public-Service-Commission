@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/12.png", 
         "backgroundColor": "#ffffff"
       },
-      "package": "com.davidsapkota.JourneyofFaith"
+      "package": "com.lokSewa"
     },
     "extra": {
       "eas": {
