@@ -31,15 +31,16 @@ import { AntDesign } from "@expo/vector-icons";
 import forTecher from "./Mainsubject/ExampleQustion/forTecher";
 
 
-
-
-
+import Userpost from "./Userpost/Userpost";
+import Userchat from "./Userpost/Userchat";
+import Frind from "./Userpost/Frind";
 
 const Stack = createStackNavigator();
 
 function Home({ navigation }) {
   return (
     <ScrollView style={styles.scrollView}>
+
       <View style={styles.A}>
         <View style={styles.container}>
           <View style={styles.separator} />
@@ -73,7 +74,7 @@ function Home({ navigation }) {
             }
           >
             <Text style={styles.buttonText}>
-              गोरखापत्रमा प्रकाशित प्रश्नहरू
+              गोरखापत्रमा आज प्रकाशित प्रश्नहरू
             </Text>
           </TouchableOpacity>
 
@@ -98,7 +99,10 @@ function Home({ navigation }) {
             <Text style={styles.buttonText}>विविध समग्री</Text>
           </TouchableOpacity>
         </View>
+        
       </View>
+
+
     </ScrollView>
   );
 }
@@ -107,37 +111,89 @@ function HomeStack() {
   return (
     <Stack.Navigator>
 
+<Stack.Screen
+  name="लोक सेवा तयारी"
+  component={Home}
+  options={({ navigation }) => ({
+    headerLeft: () => null,  // Hide the back arrow
+    headerStyle: {
+      backgroundColor: "#B23850",
+    },
+    // Header title at the top
+    headerTitle: () => (
+      <View style={styles.headerTitleContainer}>
+        {/* Title - "लोक सेवा तयारी" */}
+        <Text style={styles.headerTitle}>लोक सेवा तयारी</Text>
+      </View>
+    ),
+
+    headerRight: () => (
+      <View style={styles.iconContainer}>
 
 
+         {/* Home Icon */}
+         <TouchableOpacity
+          style={styles.headerIcon}
+          onPress={() => navigation.navigate("Home")}
+        >
+          <MaterialCommunityIcons name="home-outline" size={40} color="#fff" />
+        </TouchableOpacity>
 
 
+ {/* frind Icon */} 
 
+<TouchableOpacity
+          style={styles.headerIcon}
+          onPress={() => navigation.navigate("frind")}
+        >
+          <MaterialCommunityIcons name="account-multiple" size={40} color="#fff" />
+        </TouchableOpacity>
 
+        
 
+       
+       
+<TouchableOpacity
+  style={styles.headerIcon}
+  onPress={() => navigation.navigate("Userchat")}
+>
+  <AntDesign name="wechat" size={30} color="#fff" /> 
+</TouchableOpacity>
 
-      <Stack.Screen
-        name="लोक सेवा तयारी"
-        component={Home}
-        options={({ navigation }) => ({
-          headerLeft: () => (
-            <TouchableOpacity
-              onPress={() => navigation.openDrawer()}
-              style={{ marginLeft: 30 }}
-            >
-              <MaterialCommunityIcons name="menu" size={50} color="#fff" />
-            </TouchableOpacity>
-          ),
-          headerStyle: {
-            backgroundColor: "#B23850",
-            height: 100,
-          },
-          headerTitleStyle: {
-            textAlign: "center",
-            color: "#fff",
-            fontSize: 30,
-          },
-        })}
-      />
+       
+
+  
+        <TouchableOpacity
+          style={styles.headerIcon}
+          onPress={() => navigation.navigate("Userpost")}
+        >
+         <MaterialCommunityIcons name="book-multiple" size={30} color="#fff" /> 
+        </TouchableOpacity>
+
+{/* Menu Icon to open drawer */}
+<TouchableOpacity
+          onPress={() => navigation.openDrawer()}
+          style={styles.headerIcon}
+        >
+          <MaterialCommunityIcons name="menu" size={40} color="#fff" />
+        </TouchableOpacity>
+
+      </View>
+    ),
+    headerStyle: {
+      backgroundColor: "#B23850", // Background color for the header
+      height: 140, // Adjusted height for both title and icons
+    },
+    headerTitleStyle: {
+      textAlign: "center",
+      color: "#fff",
+      fontSize: 24, 
+    
+    
+    },
+  })}
+/>
+
       <Stack.Screen
         name="लोक सेवा परीक्षाका लागि प्रश्नहरू"
         component={QuizHome}
@@ -516,6 +572,60 @@ function HomeStack() {
           },
         })}
       />
+
+
+<Stack.Screen
+  name="Userpost"
+  component={Userpost}
+  options={{
+    headerTitle: "User Post",
+    headerStyle: {
+      backgroundColor: "#B23850",
+    },
+    headerTitleStyle: {
+      textAlign: "center",
+      color: "#fff",
+      fontSize: 18,
+    },
+  }}
+/>
+
+
+
+<Stack.Screen
+  name="Userchat"
+  component={Userchat}
+  options={{
+    headerTitle: "User Chat",
+    headerStyle: {
+      backgroundColor: "#B23850",
+    },
+    headerTitleStyle: {
+      textAlign: "center",
+      color: "#fff",
+      fontSize: 18,
+    },
+  }}
+/>
+
+
+
+<Stack.Screen
+  name="frind"
+  component={Frind}
+  options={{
+    headerTitle: " frind list",
+    headerStyle: {
+      backgroundColor: "#B23850",
+    },
+    headerTitleStyle: {
+      textAlign: "center",
+      color: "#fff",
+      fontSize: 18,
+    },
+  }}
+/>
+
     </Stack.Navigator>
   );
 }
@@ -547,5 +657,36 @@ const styles = StyleSheet.create({
     color: "#ffffff", // White text
     textAlign: "center",
     fontSize: 20,
+  },
+
+  headerTitleContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 80,
+    marginLeft: 80
+
+  },
+
+
+  headerTitle: {
+    color: '#fff',
+    fontSize: 24, 
+    fontWeight: 'bold', 
+  },
+
+
+  iconContainer: {
+    flexDirection: 'row', 
+    marginTop: 20, 
+    paddingBottom: 0,
+    paddingRight: 40
+  },
+
+  // Individual icon style
+  headerIcon: {
+    marginHorizontal: 15, 
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

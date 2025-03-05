@@ -15,7 +15,9 @@ function MyDrawer() {
   return (
     <Drawer.Navigator drawerContent={props => <Custommenu {...props} />}>
    
-      <Drawer.Screen name="लोक सेवा आयोग तयारी" component={Home}   options={{ headerShown: false }}/>
+      <Drawer.Screen name="लोक सेवा आयोग तयारी" component={Home}   options={{ headerShown: false }}
+      
+    />
       <Drawer.Screen name="Note" component={Note}  options={({ navigation }) => ({
           headerLeft: () => (
             <TouchableOpacity
@@ -35,6 +37,10 @@ function MyDrawer() {
             fontSize: 18,
           },
         })}
+      
+      
+      
+      
       />
       <Drawer.Screen name="News" component={Notice} options={({ navigation }) => ({
           headerLeft: () => (

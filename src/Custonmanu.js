@@ -13,6 +13,8 @@ import {
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
+
 
 const Custommenu = ({ navigation }) => {
   const handleExit = () => {
@@ -100,6 +102,7 @@ const Custommenu = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
       </View>
+
     </View>
   );
 };

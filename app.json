@@ -4,7 +4,7 @@
     "slug": "AW",
     "version": "3.1.2",
     "orientation": "portrait",
-    "icon": "./assets/12.png", 
+    "icon": "./assets/12.png",
     "splash": {
       "image": "./assets/12.png",
       "resizeMode": "contain",
@@ -19,7 +19,7 @@
     "android": {
       "versionCode": 5,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/12.png", 
+        "foregroundImage": "./assets/12.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.lokSewa"
@@ -28,14 +28,15 @@
       "eas": {
         "projectId": "60f6d617-a3aa-4f86-a604-b9d41af9b964"
       }
-    }
+    },
+    "newArchEnabled": true
   },
   "web": {
-    "favicon": "./assets/favicon.png" ,
-  "extra": {
-    "eas": {
-      "projectId": "60f6d617-a3aa-4f86-a604-b9d41af9b964"
+    "favicon": "./assets/favicon.png",
+    "extra": {
+      "eas": {
+        "projectId": "60f6d617-a3aa-4f86-a604-b9d41af9b964"
+      }
     }
   }
-}
 }
